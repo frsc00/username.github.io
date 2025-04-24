@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barca</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Pantalla de entrada -->
+  <div id="intro">
+    <img src="logo-barca.png" alt="Logo del Barca" id="logo">
+    <p>Haz clic en el logo para entrar</p>
+  </div>
+
+  <!-- Contenido de la web -->
+  <div id="contenido" style="display: none;">
+    <header>
+      <h1>Bienvenido a Barca</h1>
+      <p>Tu sitio sobre el FC Barcelona ⚽</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Noticias Recientes</h2>
+        <p>Aquí encontrarás las últimas novedades del equipo, fichajes, partidos y más.</p>
+      </section>
+
+      <section>
+        <h2>Historia del Club</h2>
+        <p>El FC Barcelona fue fundado en 1899 y es uno de los clubes más grandes del mundo.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Barca Web. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("logo").addEventListener("click", function() {
+      document.getElementById("intro").style.display = "none";
+      document.getElementById("contenido").style.display = "block";
+    });
+  </script>
+
+<body
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+
+
+#intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #004d98;
+  color: white;
+}
+
+#logo {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#logo:hover {
+  transform: scale(1.1);
+}
+
+header {
+  background-color: #004d98;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+}
+
